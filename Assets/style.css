@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(hack.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.text{
+    font-size: 5em;
+    letter-spacing: 12px;
+    color:#ED48D2;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: typing 5s steps(40, end) infinite,
+    a 1s linear infinite;
+    border-right: 2px solid rgb(51, 255, 0);
+    text-shadow: 5px 5px 10px #B4B2B2,5px 5px 10px #B4B2B2,5px 5px 10px #B4B2B2;
+}
+
+@keyframes typing{
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+    
+}
+@keyframes a{
+    from {
+        border: none;
+    }
+    to{
+        border-right: 4px rgb(25, 0, 255) solid;
+    }
+    
+}
